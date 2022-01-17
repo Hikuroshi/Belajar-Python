@@ -1,4 +1,3 @@
-# Importing library
 import qrcode
 import cv2
 import random
