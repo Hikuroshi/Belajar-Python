@@ -4,16 +4,13 @@ import cv2
 import random
 import string
 
-# Data to encode
 def linkQR():
 	data = input("Masukan Link: ")
-	# Creating an instance of QRCode class
 	qr = qrcode.QRCode(
 		version = 1,
 		box_size = 10,
 		border = 5)
 
-	# Adding data to the instance 'qr'
 	qr.add_data(data)
 
 	qr.make(fit = True)
